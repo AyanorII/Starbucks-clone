@@ -256,6 +256,21 @@ p {
   overflow-x: hidden;
 }
 
+.stars-free .stars-container {
+  position: relative;
+}
+
+.stars-free .bottom-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  height: 5px;
+  background-color: #1e3932;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 .stars-free .stars {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,10 +299,6 @@ p {
   font-size: 1.25rem;
   padding: 0.625rem;
   width: 100%;
-}
-
-.stars-free .stars__btn.active {
-  border-bottom: 4px solid #008248;
 }
 
 .stars-free .stars .star-icon {
@@ -771,8 +782,9 @@ p {
     padding-bottom: 50px;
     font-size: 1.75rem;
   }
-  .stars-free .stars {
-    padding: 0 15%;
+  .stars-free .stars-container {
+    position: relative;
+    margin: 0 15%;
   }
   .stars-free .stars__btn {
     font-weight: 600;
@@ -1029,8 +1041,8 @@ p {
   .hero__heading {
     width: 50%;
   }
-  .stars-free .stars {
-    padding-inline: 30%;
+  .stars-free .stars-container {
+    margin-inline: 30%;
   }
   .stars-free .stars-free__content .content__paragraph, .stars-free .stars-free__content .content__heading {
     padding-right: 25%;

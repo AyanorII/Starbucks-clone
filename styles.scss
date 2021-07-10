@@ -233,6 +233,21 @@ p {
     text-align: center;
     padding-top: 40px;
     overflow-x: hidden;
+    
+    .stars-container {
+        
+        position: relative;
+    }
+
+    .bottom-bar {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 20%;
+        height: 5px;
+        background-color: #1e3932;
+        transition: all 0.5s ease-in-out;
+    }
 
     .stars {
         display: flex;
@@ -251,9 +266,6 @@ p {
             padding: 0.625rem;
             width: 100%;
 
-            &.active {
-                border-bottom: 4px solid #008248;
-            }
         }
 
         .star-icon {
@@ -291,6 +303,8 @@ p {
             padding: 0 1.875rem;
         }
     }
+
+
 }
 
 .extras {
@@ -727,9 +741,12 @@ p {
             font-size: 1.75rem;
         }
 
+        .stars-container {
+            position: relative;
+            margin: 0 15%;
+        }
+        
         .stars {
-            padding: 0 15%;
-
             &__btn {
                 font-weight: 600;
                 font-size: 1.75rem;
@@ -1017,8 +1034,8 @@ p {
     }
 
     .stars-free {
-        .stars {
-            padding-inline: 30%;
+        .stars-container {
+            margin-inline: 30%;
         }
 
         & &__content {
